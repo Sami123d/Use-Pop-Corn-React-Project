@@ -1,0 +1,155 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  
+}
+.Navbar{
+  background-color: #5a37d1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 5px;
+
+}
+
+.Navbar-logo-header{
+  color:#d5c4fe;
+  padding:8px 0;
+  font-family: sans-serif;
+}
+.Navbar-Search-Field{
+   color: #d5c4fe;
+    background-color: #6e45f1;
+    width: 25%;
+    padding: 8px 5px;
+    border-radius: 6px;
+    border: none;
+}
+
+.Navbar-Search-Field::placeholder{
+  color:#d5c4fe
+}
+
+.movies-div{
+  height: calc(100% - 50px);
+  background-color: #1b2021;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.MovieShowDefault{
+  background-color: #24292c;
+  width: 30%;
+  height: 94%;
+  border-radius: 10px;
+  overflow-y: scroll;
+  overflow: auto; /* Enable scrollbar */
+  scrollbar-width: thin; /* Set the width of the scrollbar */
+  scrollbar-color: #888 transparent;
+  color: #e6e4e4;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MovieShow{
+  background-color: #24292c;
+  width: 30%;
+  height: 94%;
+  border-radius: 10px;
+  overflow-y: scroll;
+  overflow: auto; /* Enable scrollbar */
+  scrollbar-width: thin; /* Set the width of the scrollbar */
+  scrollbar-color: #888 transparent;
+}
+
+/* Optional: Styling for scrollbar */
+.MovieShow::-webkit-scrollbar {
+  /* width: 10px; Set the width of the scrollbar for WebKit browsers */
+}
+.MovieShow::-webkit-scrollbar-track {
+  background-color: transparent; /* Set the track color */
+}
+
+.MovieShow::-webkit-scrollbar-thumb {
+  background-color: #888; /* Set the thumb color */
+  border-radius: 5px; /* Add border radius for rounded thumb */
+}
+
+.MovieShow::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Change thumb color on hover */
+}
+.MovieShowItemsDiv{
+  display: flex;
+  flex-direction: column;
+}
+.MovieShowItems{
+  padding: 10px;
+  height: 70px;
+  background-color: #24292c;
+  color: #e6e4e4;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+.MovieShowItemsImgContainer{
+  width: 35px;
+}
+.MovieShowItemsFontContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 14px;
+}
+hr.customHr{
+ border: 0.5px solid #414141;
+}
+.dhus{
+  border-radius: 16px;
+  text-align: center;
+  width: 21px;
+  background-color: #171c1c;
+  font-size: larger;
+  color: #fff;
+}
+.MovieList{
+  background-color: #24292c;
+
+  width: 30%;
+  height: 94%;
+  border-radius: 10px;
+  border-radius: 10px;
+  overflow-y: scroll;
+  overflow: auto; /* Enable scrollbar */
+  scrollbar-width: thin; /* Set the width of the scrollbar */
+  scrollbar-color: #888 transparent;
+}
+.MovieList::-webkit-scrollbar {
+  /* width: 10px; Set the width of the scrollbar for WebKit browsers */
+}
+.MovieList::-webkit-scrollbar-track {
+  background-color: transparent; /* Set the track color */
+}
+
+.MovieList::-webkit-scrollbar-thumb {
+  background-color: #888; /* Set the thumb color */
+  border-radius: 5px; /* Add border radius for rounded thumb */
+}
+
+.MovieList::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Change thumb color on hover */
+
+}
+.MovieListItemsDiv{
+  display: flex;
+  flex-direction: column;
+}
+.MovieListItems{
+  height: 60px;
+  background-color: #24292c;
+  color: #e6e4e4;
+}
